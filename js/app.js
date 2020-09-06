@@ -6,12 +6,8 @@ $(document).ready(() => {
 $('#searchInput').on('keyup', function(e) {
   fetchData($(this).val());
 });
-
-
-function addContent() {
-let output = '';
-
-}
+  
+  fetchData();
 
 
 
@@ -39,7 +35,6 @@ axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
 }
 
 
-fetchData();
 
 
 
